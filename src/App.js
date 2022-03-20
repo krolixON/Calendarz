@@ -20,7 +20,7 @@ const DUMMY_EVENTS = [
 ];
 
 function App() {
-  const [newEvent, setNewEvent] = useState({ title: "", start: "", end: "" });
+  const [newEvent, setNewEvent] = useState({ title: "", start: ""});
   const [allEvents, setAllEvents] = useState(DUMMY_EVENTS);
 
   const eventTitleHandler = (e) => {
@@ -54,7 +54,7 @@ function App() {
             value={newEvent.start}
             onChange={eventDateHandler}
           />
-          <input type="submit" value="dodaj wydarzenie" onClick={handleAddEvent} />
+          <input type="submit" value="add Event" onClick={handleAddEvent} />
         </form>
       </div>
       <FullCalendar
